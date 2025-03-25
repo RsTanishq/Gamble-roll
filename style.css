@@ -1,0 +1,121 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #2c3e50;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  color: #ecf0f1;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #f1c40f;
+  text-shadow: 0 0 10px #f1c40f;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+button {
+  background: #f39c12;
+  color: #fff;
+  padding: 12px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #e67e22;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(230, 126, 34, 0.4);
+}
+
+#balance-display,
+#lines-display,
+#bet-display {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#result {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #f1c40f;
+  font-weight: bold;
+  text-shadow: 0 0 8px #f1c40f;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(3, 60px);
+  gap: 8px;
+  margin-top: 20px;
+  background: #34495e;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  gap: 8px;
+  justify-content: center;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #95a5a6;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.highlight {
+  background-color: #27ae60;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #2ecc71;
+  box-shadow: 0 0 15px #2ecc71;
+}
+
+.alert {
+  background: #e74c3c;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
